@@ -17,7 +17,7 @@ h1 {
 }
 
 /* Other Headings */
-h2, h3, h4 {
+h2, h3, h4 ,a {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
@@ -31,6 +31,122 @@ p {
 
 
 /* Buttons */
-button, a {
+button {
     font-family: 'Inter', sans-serif;
 }
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #31141A;
+    color: white;
+    margin: 0;
+    padding: 8px 15px;
+}
+
+
+
+
+
+
+
+
+
+.top-bar p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* LOGO */
+.container a img {
+    width: 80px;
+    color: #31141A;
+    transition: 0.3s ease;
+}
+
+
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.dropdown-item
+
+a :hover{
+background-color: #31141A;
+}
+
+
+/* Dropdown items */
+.navbar .dropdown-item {
+    color: #4a3838;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.navbar .dropdown-item:hover {
+    background: linear-gradient(
+        90deg,
+      #31141A
+    );
+    color: white;
+    padding-left: 22px;
+}
+
+/* Small star */
+.navbar .dropdown-item::before {
+    content: "✦";
+    color:white;
+    margin-right: 8px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.navbar .dropdown-item:hover::before {
+    opacity: 1;
+}
+
+
+.dropdown-item::before {
+    content: "✦";
+    color:white;
+    margin-right: 8px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav-item a{
+    font-weight: 40px;
+    color:#31141A;
+}
+@media (max-width: 768px) {
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .top-bar p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons img {
+        width: 25px;
+    }
+}
+
