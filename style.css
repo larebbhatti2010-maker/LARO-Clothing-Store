@@ -17,7 +17,7 @@ h1 {
 }
 
 /* Other Headings */
-h2, h3, h4 ,a {
+h2, h3, h4 ,a ,H5{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
@@ -149,4 +149,29 @@ background-color: #31141A;
         width: 25px;
     }
 }
+.container-sm{
+    margin-top: 30PX;
+  text-align: center;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
 
+
+.container-fluid IMG{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 25VH;
+    width: 150PX;
+}
+
+.container-fluid IMG:hover{
+    transform: scale(1.1);
+}
+
+
+.container-fluid H5{
+    padding-top: 20PX;
+    color: #31141A;
+    font-weight: 30PX;
+}
