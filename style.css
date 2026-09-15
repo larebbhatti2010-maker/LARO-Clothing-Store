@@ -159,6 +159,7 @@ justify-content: space-between;
 
 
 .container-fluid IMG{
+    border: 3px solid #31141A;
     object-fit: cover;
     border-radius: 50%;
     height: 25VH;
@@ -176,3 +177,7 @@ justify-content: space-between;
     font-weight: 30PX;
 }
 
+/* .IMG{
+       border: 3px solid #31141A;
+
+} */
