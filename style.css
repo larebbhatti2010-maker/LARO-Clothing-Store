@@ -190,3 +190,8 @@ justify-content: space-between;
  .img1 img:HOVER{
     transform: scale(1.1);
  }
+
+ .COMMIT1:hover{
+    transform: scale(1.1);
+
+ }
