@@ -3,992 +3,1175 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <style>
-    
+    <title>Your Brand</title>
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Pacifico&display=swap');
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    >
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Pacifico&display=swap');
 
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
-/* Main Heading */
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-}
-
-/* Other Headings */
-h2, h3, h4 ,a ,H5{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-}
-
-/* Normal Text */
-p {
-    font-family: 'Inter', sans-serif;
-}
-
-
-
-
-/* Buttons */
-button {
-    font-family: 'Inter', sans-serif;
-}
-
-.top-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #31141A;
-    color: white;
-    margin: 0;
-    padding: 8px 15px;
-}
-
-
-
-
-
-
-
-
-
-.top-bar p {
-    margin: 0;
-    font-size: 13px;
-}
-
-/* LOGO */
-.container a img {
-    width: 80px;
-    color: #31141A;
-    transition: 0.3s ease;
-}
-
-
-
-.nav-link:hover{
-    text-decoration: underline;
-}
-
-.dropdown-item
-
-a :hover{
-background-color: #31141A;
-}
-
-
-/* Dropdown items */
-.navbar .dropdown-item {
-    color: #4a3838;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-/* Hover */
-.navbar .dropdown-item:hover {
-    background: linear-gradient(
-        90deg,
-      #31141A
-    );
-    color: white;
-    padding-left: 22px;
-}
-
-/* Small star */
-.navbar .dropdown-item::before {
-    content: "✦";
-    color:white;
-    margin-right: 8px;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.navbar .dropdown-item:hover::before {
-    opacity: 1;
-}
-
-
-.dropdown-item::before {
-    content: "✦";
-    color:white;
-    margin-right: 8px;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.nav-item a{
-    font-weight: 40px;
-    color:#31141A;
-}
-@media (max-width: 768px) {
-
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-        padding: 10px;
-    }
-
-    .top-bar p {
+      * {
         margin: 0;
-        font-size: 12px;
-    }
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    .icons {
+      body {
+        font-family: 'Raleway', sans-serif;
+      }
+
+      /* Main Heading */
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+      }
+
+      /* Other Headings */
+      h2, h3, h4, a, h5 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+      }
+
+      /* Normal Text */
+      p {
+        font-family: 'Inter', sans-serif;
+      }
+
+      /* Buttons */
+      button {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .top-bar {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-    }
+        background-color: #31141A;
+        color: white;
+        margin: 0;
+        padding: 8px 15px;
+      }
 
-    .icons img {
-        width: 25px;
-    }
-}
+      .top-bar p {
+        margin: 0;
+        font-size: 13px;
+      }
 
-  </style>
+      /* LOGO */
+      .container a img {
+        width: 80px;
+        color: #31141A;
+        transition: 0.3s ease;
+      }
+
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+
+      .dropdown-item:hover {
+        background-color: #31141A;
+        color: white;
+      }
+
+      /* Dropdown items */
+      .navbar .dropdown-item {
+        color: #4a3838;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      /* Hover */
+      .navbar .dropdown-item:hover {
+        background: linear-gradient(90deg, #31141A);
+        color: white;
+        padding-left: 22px;
+      }
+
+      /* Small star */
+      .navbar .dropdown-item::before {
+        content: "✦";
+        color: white;
+        margin-right: 8px;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .navbar .dropdown-item:hover::before {
+        opacity: 1;
+      }
+
+      .nav-item a {
+        font-weight: 600;
+        color: #31141A;
+      }
+
+      @media (max-width: 768px) {
+        .top-bar {
+          flex-direction: column;
+          text-align: center;
+          gap: 8px;
+          padding: 10px;
+        }
+
+        .top-bar p {
+          margin: 0;
+          font-size: 12px;
+        }
+
+        .icons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .icons img {
+          width: 25px;
+        }
+      }
+
+      /* Footer */
+      .FOOTER {
+        background-color: #31141A;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 50px 5%;
+        margin-top: 60px;
+      }
+
+      .FOOTER-BOX {
+        flex: 1 1 200px;
+        min-width: 200px;
+      }
+
+      .FOOTER h2,
+      .FOOTER h3 {
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+      }
+
+      .FOOTER h2 {
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .FOOTER p {
+        margin: 6px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #f0f0f0;
+      }
+
+      .FOOTER a {
+        display: block;
+        color: #f0f0f0;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 6px 0;
+        transition: color 0.2s ease;
+      }
+
+      .FOOTER a:hover {
+        color: #ffc107;
+      }
+
+      .COPYRIGHT {
+        background-color: #220e14;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+      }
+
+      .COPYRIGHT p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
   <body>
+    <!-- Top bar start -->
+    <div class="top-bar">
+      <p>Free Shipping on Orders Over ₨5,000</p>
+      <p>7-Day Easy Returns</p>
+      <p>Exclusive Styles — Join LARO</p>
 
-    <!-- bannar start  -->
-<!-- top bar start -->
-<div class="top-bar">
-    <p>Free Shipping on Orders Over ₨5,000</p>
-    <p>7-Day Easy Returns</p>
-    <p>Exclusive Styles — Join LARO</p>
-
-    <div class="icons">
-      <a href=""><img src="search.png" width="30px"></a>
-      
-
-
+      <div class="icons">
+        <a href=""><img src="search.png" width="30px" alt="Search"></a>
+      </div>
     </div>
-</div>
-<!-- top bar end -->
-     <!-- bannar end -->
-<!-- navbar start -->
-<nav class="navbar navbar-expand-lg" style="margin-top:40px;">
+    <!-- Top bar end -->
 
-  <div class="container">
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg" style="margin-top: 40px;">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="l2.png" alt="Logo"></a>
 
-    <a class="navbar-brand" href="#"><img src="l2.png" ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 41px;">
+          <ul class="navbar-nav" style="margin-top: 20px; gap: 5px;">
+            <li class="nav-item" style="font-weight: bold;">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: #31141A;">HOME</a>
+            </li>
 
-      <span class="navbar-toggler-icon"></span>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">SHOP</a>
+            </li>
 
-    </button>
+            <li class="nav-item">
+              <a class="nav-link" href="NEW ARRAIVAL.HTML">NEW ARRIVALS</a>
+            </li>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 41px;">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                WOMEN COLLECTION
+              </a>
 
-      <ul class="navbar-nav" style="margin-top: 20px; gap: 5px; ">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dresses</a></li>
+                <li><a class="dropdown-item" href="#">2-Piece Suits</a></li>
+                <li><a class="dropdown-item" href="#">3-Piece Suits</a></li>
+                <li><a class="dropdown-item" href="#">Tops</a></li>
+                <li><a class="dropdown-item" href="#">Party Wear</a></li>
+                <li><a class="dropdown-item" href="#">Casual Wear</a></li>
+                <li><a class="dropdown-item" href="#">Abayas</a></li>
+                <li><a class="dropdown-item" href="#">Co-Ord Sets</a></li>
+              </ul>
+            </li>
 
-        <!-- HOME -->
-        <li class="nav-item"  style="font-weight: bold;">
-          <a class="nav-link active" aria-current="page" href="index.html" style="color: #31141A;" >HOME</a>
-        </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                COLLECTION
+              </a>
 
-        <!-- SHOP -->
-        <li class="nav-item">
-          <a class="nav-link" href="shop.html">SHOP</a>
-        </li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">New Collection</a></li>
+                <li><a class="dropdown-item" href="#">Summer Collection</a></li>
+                <li><a class="dropdown-item" href="#">Festive Collection</a></li>
+                <li><a class="dropdown-item" href="#">Signature Collection</a></li>
+              </ul>
+            </li>
 
-        <!-- NEW ARRIVALS -->
-        <li class="nav-item">
-          <a class="nav-link" href="NEW ARRAIVAL.HTML">NEW ARRIVALS</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BEST SELLERS</a>
+            </li>
 
-        <!-- WOMEN COLLECTION -->
-        <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="#">SALE</a>
+            </li>
 
-          <a class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
 
-            WOMEN COLLECTION
-
-          </a>
-
-          <ul class="dropdown-menu" >
-
-            <li><a class="dropdown-item" href="#">Dresses</a></li>
-            <li><a class="dropdown-item" href="#">2-Piece Suits</a></li>
-            <li><a class="dropdown-item" href="#">3-Piece Suits</a></li>
-            <li><a class="dropdown-item" href="#">Tops</a></li>
-            <li><a class="dropdown-item" href="#">Party Wear</a></li>
-            <li><a class="dropdown-item" href="#">Casual Wear</a></li>
-            <li><a class="dropdown-item" href="#">Abayas</a></li>
-            <li><a class="dropdown-item" href="#">Co-Ord Sets</a></li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
           </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
 
-        </li>
+    <!-- Banner start -->
+    <div class="card text-bg-dark" style="border: none; margin-top: 30px;">
+      <img
+        src="ARRAIVALBANNAR2.jpg"
+        class="card-img"
+        alt="Banner"
+        style="height: 96vh; object-fit: cover;"
+      >
+      <div class="card-img-overlay" style="margin-top: 40px; margin-left: 50px;">
+        <h5 style="color: white;">NEW ARRIVALS</h5>
+        <h1 class="card-title" style="font-size: 80px; color: #31141A;">
+          DRESS<br>YOUR<br>MOMENT.
+        </h1>
+        <p class="card-text" style="font-size: 20px; color: white;">
+          TIMELESS PIECES<br>MADE FOR YOU.
+        </p>
+      </div>
+    </div>
+    <!-- Banner end -->
 
-        <!-- COLLECTION -->
-        <li class="nav-item dropdown">
+    <h1 style="text-align: center; margin-top: 40px; color: #31141A;">
+      NEW ARRIVAL COLLECTION
+    </h1>
 
-          <a class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
+    <div
+      class="container"
+      style="display: flex; align-items: stretch; justify-content: center; gap: 30px; margin-top: 30px; flex-wrap: wrap;"
+    >
+      <div
+        class="card mb-3"
+        style="max-width: 18rem; background-image: url('P (2).jpg'); background-size: cover; background-position: center;"
+      >
+        <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
+        <div class="card-body" style="background: rgba(255,255,255,0.85);">
+          <h5 class="card-title" style="color: #31141A;">T-Shirts</h5>
+          <p class="card-text" style="color: #31141A;">
+            Plain, printed, and school-friendly tees in soft cotton. Sizes for kids and teens. Open 9am to 8pm. Pickup and fitting available.
+          </p>
 
-            COLLECTION
-
+          <a href="#T-SHIRT">
+            <button type="button" class="btn" style="background-color: #31141A; color: rgb(243, 238, 238);">
+              Explore More
+            </button>
           </a>
+        </div>
+      </div>
 
-          <ul class="dropdown-menu">
+      <div
+        class="card mb-3"
+        style="max-width: 18rem; background-image: url(JENS.jpg); background-size: cover; background-position: center;"
+      >
+        <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
+        <div class="card-body" style="background: rgba(255,255,255,0.85);">
+          <h5 class="card-title" style="color: #31141A;">Jeans</h5>
+          <p class="card-text" style="color: #31141A;">
+            Comfortable denim in classic and stretch fits. Everyday wear and school-appropriate styles. Open 9am to 8pm. Pickup and fitting available.
+          </p>
 
-            <li><a class="dropdown-item" href="#">New Collection</a></li>
-            <li><a class="dropdown-item" href="#">Summer Collection</a></li>
-            <li><a class="dropdown-item" href="#">Festive Collection</a></li>
-            <li><a class="dropdown-item" href="#">Signature Collection</a></li>
+          <a href="#JEANS">
+            <button type="button" class="btn" style="background-color: #31141A; color: white;">
+              Explore More
+            </button>
+          </a>
+        </div>
+      </div>
 
-          </ul>
+      <div
+        class="card mb-3"
+        style="max-width: 18rem; background-image: url(HODDIE.jpg); background-size: cover; background-position: center;"
+      >
+        <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
+        <div class="card-body" style="background: rgba(255,255,255,0.85);">
+          <h5 class="card-title" style="color: #31141A;">Hoodies</h5>
+          <p class="card-text" style="color: #31141A;">
+            Warm hoodies and sweatshirts in neutral colors. Great for school and weekends. Open 9am to 8pm. Pickup and fitting available.
+          </p>
 
-        </li>
+          <a href="#HOODIES">
+            <button type="button" class="btn" style="background-color: #31141A; color: white;">
+              Explore More
+            </button>
+          </a>
+        </div>
+      </div>
 
-        <!-- BEST SELLERS -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">BEST SELLERS</a>
-        </li>
+      <div
+        class="card mb-3"
+        style="max-width: 18rem; background-image: url('Elegant Wrap Midi Dress With Sheer Sleeves.jpg'); background-size: cover; background-position: center;"
+      >
+        <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
+        <div class="card-body" style="background: rgba(255,255,255,0.85);">
+          <h5 class="card-title" style="color: #31141A;">Tops</h5>
+          <p class="card-text" style="color: #31141A;">
+            Everyday tops: t-shirts, shirts, and simple blouses in neutral colors. Soft fabric for school and weekends. Open 9am to 8pm. Pickup and fitting available.
+          </p>
 
-        <!-- SALE -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">SALE</a>
-        </li>
+          <a href="#TOPS">
+            <button type="button" class="btn" style="background-color: #31141A; color: white;">
+              Explore More
+            </button>
+          </a>
+        </div>
+      </div>
 
-        <!-- ABOUT -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT</a>
-        </li>
+      <div
+        class="card mb-3"
+        style="max-width: 18rem; background-image: url('Eid collection.jpg'); background-size: cover; background-position: center;"
+      >
+        <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
+        <div class="card-body" style="background: rgba(255,255,255,0.85);">
+          <h5 class="card-title" style="color: #31141A;">3-Piece Co-ord Set</h5>
+          <p class="card-text" style="color: #31141A;">
+            Matching 3-piece set: top, bottom, and jacket or cardigan in the same colors. Easy to wear together or mix with other clothes. Soft fabric, school and weekend friendly. Open 9am to 8pm. Pickup and fitting available.
+          </p>
 
-        <!-- CONTACT -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT</a>
-        </li>
+          <a href="#THREE-PIECE">
+            <button type="button" class="btn" style="background-color: #31141A; color: white;">
+              Explore More
+            </button>
+          </a>
+        </div>
+      </div>
 
-      </ul>
+      <div
+        class="card mb-3"
+        style="max-width: 18rem; background-image: url('Elegant Rose Pink Satin Dress.jpg'); background-size: cover; background-position: center;"
+      >
+        <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
+        <div class="card-body" style="background: rgba(255,255,255,0.85);">
+          <h5 class="card-title" style="color: #31141A;">Party Wear</h5>
+          <p class="card-text" style="color: #31141A;">
+            Outfits for birthdays, family events, and school functions. Simple festive sets and smart pieces in soft fabrics. Open 9am to 8pm. Pickup and fitting available.
+          </p>
 
+          <a href="#PARTY-WEAR">
+            <button type="button" class="btn" style="background-color: #31141A; color: white;">
+              Explore More
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <!-- T-SHIRTS COLLECTION -->
+    <h1 id="T-SHIRT" style="color: #31141A; text-align: center; margin-top: 20px;">
+      T-SHIRTS COLLECTION
+    </h1>
 
-</nav>
-<!-- navbar end -->
- <!-- navbar end -->
-<!-- BANNAR START -->
- <div class="card text-bg-dark" style="border: NONE; margin-top: 30PX;">
-  <img src="ARRAIVALBANNAR2.jpg" class="card-img" alt="..." style="height: 96VH; object-fit: cover;">
-  <div class="card-img-overlay" style="margin-top: 40PX; margin-left: 50PX;">
-    <H5 style="    color: white">NEW ARRIVALS </H5>
-    <h1 class="card-title" style="font-size: 80PX;color: #31141A;">DRESS<BR> YOUR<BR>MOMENT.</h1>
-    <p class="card-text" style="font-size: 20PX;    color: white">TIMELESS PIECES<BR> MABE FOR YOU.</p>
-   
-  </div>
-</div>
- <!-- BANNAR END -->
-
-<H1 style="text-align: center; margin-top:40PX; color: #31141A;">NEW ARRIVAL  COLLECTION</H1>
-
-
-
-
-<div class="container" style="display: flex; align-items: stretch; justify-content: center; gap: 30px; margin-top: 30px; flex-wrap: wrap;">
-
-  <div class="card mb-3" style="max-width: 18rem; background-image: url('P (2).jpg'); background-size: cover; background-position: center;">
-    <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
-    <div class="card-body" style="background: rgba(255,255,255,0.85);">
-      <h5 class="card-title" style="color: #31141A;">T-Shirts</h5>
-      <p class="card-text" style="color: #31141A;">Plain, printed, and school-friendly tees in soft cotton. Sizes for kids and teens. Open 9am to 8pm. Pickup and fitting available.</p>
-
-      <A href="#T-SHIRT"> <button type="button" class="btn " style="background-color: #31141A; color: rgb(243, 238, 238);">Explore More</button>
-    </div></A>
-     
-  </div>
-
-  <div class="card mb-3" style="max-width: 18rem; background-image: url(JENS.jpg); background-size: cover; background-position: center;">
-    <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
-    <div class="card-body" style="background: rgba(255,255,255,0.85);">
-      <h5 class="card-title" style="color: #31141A;">Jeans</h5>
-      <p class="card-text" style="color: #31141A;">Comfortable denim in classic and stretch fits. Everyday wear and school-appropriate styles. Open 9am to 8pm. Pickup and fitting available.</p>
-      
-      <A href="#JEANS"><button type="button" class="btn "style="background-color: #31141A; color: white;">Explore More</button>  </A>
-    
-    </div>
-  </div>
-
-  <div class="card mb-3" style="max-width: 18rem; background-image: url(HODDIE.jpg); background-size: cover; background-position: center;">
-    <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
-    <div class="card-body" style="background: rgba(255,255,255,0.85);">
-      <h5 class="card-title" style="color: #31141A;">Hoodies</h5>
-      <p class="card-text" style="color: #31141A;">Warm hoodies and sweatshirts in neutral colors. Great for school and weekends. Open 9am to 8pm. Pickup and fitting available.</p>
-      <A href="#HOODIES">
-      <button type="button" class="btn "style="background-color: #31141A; color: white;">Explore More</button></A>
-    </div>
-  </div>
-
-  <div class="card mb-3" style="max-width: 18rem; background-image: url(Elegant\ Wrap\ Midi\ Dress\ With\ Sheer\ Sleeves.jpg); background-size: cover; background-position: center;">
-    <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
-    <div class="card-body" style="background: rgba(255,255,255,0.85);">
-      <h5 class="card-title" style="color: #31141A;">Tops</h5>
-      <p class="card-text" style="color: #31141A;">Everyday tops: t-shirts, shirts, and simple blouses in neutral colors. Soft fabric for school and weekends. Open 9am to 8pm. Pickup and fitting available.</p>
-      <A href="#TOPS">
-      <button type="button" class="btn"style="background-color: #31141A; color: white;">Explore More</button></A>
-    </div>
-  </div>
-
-  <div class="card mb-3" style="max-width: 18rem; background-image: url(Eid\ collection.jpg); background-size: cover; background-position: center;">
-    <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
-    <div class="card-body" style="background: rgba(255,255,255,0.85);">
-      <h5 class="card-title" style="color: #31141A;">3-Piece Co-ord Set</h5>
-
-
-    
-      <p class="card-text" style="color: #31141A;">Matching 3-piece set: top, bottom, and jacket or cardigan in the same colors. Easy to wear together or mix with other clothes. Soft fabric, school and weekend friendly. Open 9am to 8pm. Pickup and fitting available.</p>
-
-      <a href="#THREE-PIECE">
-      <button type="button" class="btn " style="background-color: #31141A; color: white;">Explore More</button></a>
-    </div>
-  </div>
-
-  
-    <div class="card mb-3" style="max-width: 18rem; background-image: url(Elegant\ Rose\ Pink\ Satin\ Dress.jpg); background-size: cover; background-position: center;">
-    <div class="card-header" style="color: #31141A;">NEW ARRIVAL</div>
-    <div class="card-body" style="background: rgba(255,255,255,0.85);">
-      <h5 class="card-title" style="color: #31141A;">Party Wear</h5>
-      <p class="card-text" style="color: #31141A;">Outfits for birthdays, family events, and school functions. Simple festive sets and smart pieces in soft fabrics. Open 9am to 8pm. Pickup and fitting available.</p>
-      <A href="#PARTY-WEAR">
-      <button type="button" class="btn " style="background-color: #31141A; color: white;">Explore More</button></A>
-    </div>
-  </div>
-
-</div>
-
-
-
-<!-- T-SHIRTS  -->
-
-
-
-
-
-<H1 ID="T-SHIRT" style="color: #31141A; text-align: center;  margin-top: 20PX;"> T-SHIRTS COLLECTION </H1>
-
-<!-- Row 1 -->
-  <div class="container-sm" style="margin-top: 20px;" ID="T-SHIRT">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (1).jpg" class="card-img-top" alt="Blue superhero T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Superhero Cape Tee</h5>
-              <p class="card-text">Bright blue shirt with a comic-style hero emblem on the chest. Soft cotton that is easy to wash.</p>
-              <p class="mb-1"><span class="price">$14.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
-         <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+    <!-- Row 1 -->
+    <div class="container-sm" style="margin-top: 20px;">
+      <div class="container text-center">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (1).jpg" class="card-img-top" alt="Blue superhero T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Superhero Cape Tee</h5>
+                <p class="card-text">
+                  Bright blue shirt with a comic-style hero emblem on the chest. Soft cotton that is easy to wash.
+                </p>
+                <p class="mb-1"><span class="price">$14.99</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (2).jpg" class="card-img-top" alt="Green dinosaur T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Dinosaur Explorer Tee</h5>
-              <p class="card-text">Friendly T-rex graphic on forest green fabric. Great for park days and school trips.</p>
-              <p class="mb-1"><span class="price">$16.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–10</span></p>
-                 <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (2).jpg" class="card-img-top" alt="Green dinosaur T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Dinosaur Explorer Tee</h5>
+                <p class="card-text">
+                  Friendly T-rex graphic on forest green fabric. Great for park days and school trips.
+                </p>
+                <p class="mb-1"><span class="price">$16.99</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 5–10</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (3).jpg" class="card-img-top" alt="Orange soccer T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Soccer Star Tee</h5>
-              <p class="card-text">Orange sports tee with a soccer ball print. Lightweight and good for practice or play.</p>
-              <p class="mb-1"><span class="price">$18.50</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
-            <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (3).jpg" class="card-img-top" alt="Orange soccer T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Soccer Star Tee</h5>
+                <p class="card-text">
+                  Orange sports tee with a soccer ball print. Lightweight and good for practice or play.
+                </p>
+                <p class="mb-1"><span class="price">$18.50</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Row 2 -->
-  <div class="container-sm" style="margin-top: 20px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (4).jpg" class="card-img-top" alt="Purple unicorn T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Rainbow Unicorn Tee</h5>
-              <p class="card-text">Soft purple shirt with a smiling unicorn and rainbow mane. Extra comfy for everyday wear.</p>
-              <p class="mb-1"><span class="price">$15.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 4–10</span></p>
-                   <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+    <!-- Row 2 -->
+    <div class="container-sm" style="margin-top: 20px;">
+      <div class="container text-center">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (4).jpg" class="card-img-top" alt="Purple unicorn T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Rainbow Unicorn Tee</h5>
+                <p class="card-text">
+                  Soft purple shirt with a smiling unicorn and rainbow mane. Extra comfy for everyday wear.
+                </p>
+                <p class="mb-1"><span class="price">$15.99</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 4–10</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (5).jpg" class="card-img-top" alt="Navy space T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Space Adventure Tee</h5>
-              <p class="card-text">Navy shirt with planets, stars, and a rocket. Glow-print style that looks fun in photos.</p>
-              <p class="mb-1"><span class="price">$17.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 7–13</span></p>
-                     <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (5).jpg" class="card-img-top" alt="Navy space T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Space Adventure Tee</h5>
+                <p class="card-text">
+                  Navy shirt with planets, stars, and a rocket. Glow-print style that looks fun in photos.
+                </p>
+                <p class="mb-1"><span class="price">$17.99</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 7–13</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (6).jpg" class="card-img-top" alt="Tan jungle animals T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Jungle Animals Tee</h5>
-              <p class="card-text">Tan tee with lions, monkeys, and parrots. A cheerful print for zoo visits and weekends.</p>
-              <p class="mb-1"><span class="price">$16.49</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
-                 <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (6).jpg" class="card-img-top" alt="Tan jungle animals T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Jungle Animals Tee</h5>
+                <p class="card-text">
+                  Tan tee with lions, monkeys, and parrots. A cheerful print for zoo visits and weekends.
+                </p>
+                <p class="mb-1"><span class="price">$16.49</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Row 3 -->
-  <div class="container-sm" style="margin-top: 20px; margin-bottom: 40px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (7).jpg" class="card-img-top" alt="Blue coding T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Young Coder Tee</h5>
-              <p class="card-text">Sky-blue shirt with a simple robot and code blocks. Fun for STEM clubs and computer class.</p>
-              <p class="mb-1"><span class="price">$19.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 10–16</span></p>
-                 <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+    <!-- Row 3 -->
+    <div class="container-sm" style="margin-top: 20px; margin-bottom: 40px;">
+      <div class="container text-center">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (7).jpg" class="card-img-top" alt="Blue coding T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Young Coder Tee</h5>
+                <p class="card-text">
+                  Sky-blue shirt with a simple robot and code blocks. Fun for STEM clubs and computer class.
+                </p>
+                <p class="mb-1"><span class="price">$19.99</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 10–16</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (10).jpg" class="card-img-top" alt="Aqua ocean T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Ocean Friends Tee</h5>
-              <p class="card-text">Aqua shirt with dolphins, fish, and waves. Cool and light for hot-weather play.</p>
-              <p class="mb-1"><span class="price">$15.49</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 4–9</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (10).jpg" class="card-img-top" alt="Aqua ocean T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Ocean Friends Tee</h5>
+                <p class="card-text">
+                  Aqua shirt with dolphins, fish, and waves. Cool and light for hot-weather play.
+                </p>
+                <p class="mb-1"><span class="price">$15.49</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 4–9</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/T-SHIRT (9).jpg" class="card-img-top" alt="Red champion T-shirt">
-            <div class="card-body text-start" style="text-align: center;">
-              <h5 class="card-title">Champion Athlete Tee</h5>
-              <p class="card-text">Bold red shirt with a gold star badge. Great for sports day, gym class, or cheering a team.</p>
-              <p class="mb-1"><span class="price">$21.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 8–15</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-
-
-
-  <DIV>
-    <h1 id="JEANS" style="color: #31141A; text-align: center; margin-top: 90px;">JEANS COLLECTION</h1>
-
-  <!-- Jeans Row 1 -->
-  <div class="container-sm" style="margin-top: 20px; margin-top: 90PX;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/JENS (1).jpg" class="card-img-top" alt="Classic blue kids jeans">
-            <div class="card-body text-start">
-              <h5 class="card-title">Classic Blue Jeans</h5>
-              <p class="card-text">Everyday medium-blue jeans with a comfy waist and room to move. Good for school and play.</p>
-              <p class="mb-1"><span class="price">$22.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/JENS (2).jpg" class="card-img-top" alt="Light wash kids jeans">
-            <div class="card-body text-start">
-              <h5 class="card-title">Light Wash Jeans</h5>
-              <p class="card-text">Soft light-blue denim that feels easy on warm days. Simple pockets and a straight kid fit.</p>
-              <p class="mb-1"><span class="price">$21.49</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/JENS (2).jpg" class="card-img-top" alt="Black stretch kids jeans">
-            <div class="card-body text-start">
-              <h5 class="card-title">Stretch Black Jeans</h5>
-              <p class="card-text">Black jeans with a little stretch so sitting, running, and climbing stay comfortable.</p>
-              <p class="mb-1"><span class="price">$23.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shop/T-SHIRT (9).jpg" class="card-img-top" alt="Red champion T-shirt">
+              <div class="card-body text-start">
+                <h5 class="card-title">Champion Athlete Tee</h5>
+                <p class="card-text">
+                  Bold red shirt with a gold star badge. Great for sports day, gym class, or cheering a team.
+                </p>
+                <p class="mb-1"><span class="price">$21.99</span></p>
+                <p class="mb-3"><span class="age-badge">Ages 8–15</span></p>
+                <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Jeans Row 2 -->
-  <div class="container-sm" style="margin-top: 20px; margin-bottom: 40px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/JENS (9).jpg" class="card-img-top" alt="Kids cargo jeans">
-            <div class="card-body text-start">
-              <h5 class="card-title">Cargo Pocket Jeans</h5>
-              <p class="card-text">Blue jeans with extra side pockets for small treasures, crayons, or a snack bag.</p>
-              <p class="mb-1"><span class="price">$24.50</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+    <!-- JEANS COLLECTION -->
+    <div>
+      <h1 id="JEANS" style="color: #31141A; text-align: center; margin-top: 90px;">
+        JEANS COLLECTION
+      </h1>
+
+      <!-- Jeans Row 1 -->
+      <div class="container-sm" style="margin-top: 20px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/JENS (1).jpg" class="card-img-top" alt="Classic blue kids jeans">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Classic Blue Jeans</h5>
+                  <p class="card-text">
+                    Everyday medium-blue jeans with a comfy waist and room to move. Good for school and play.
+                  </p>
+                  <p class="mb-1"><span class="price">$22.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/JENS (2).jpg" class="card-img-top" alt="Light wash kids jeans">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Light Wash Jeans</h5>
+                  <p class="card-text">
+                    Soft light-blue denim that feels easy on warm days. Simple pockets and a straight kid fit.
+                  </p>
+                  <p class="mb-1"><span class="price">$21.49</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/JENS (3).jpg" class="card-img-top" alt="Black stretch kids jeans">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Stretch Black Jeans</h5>
+                  <p class="card-text">
+                    Black jeans with a little stretch so sitting, running, and climbing stay comfortable.
+                  </p>
+                  <p class="mb-1"><span class="price">$23.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/JENS (8).jpg" class="card-img-top" alt="Easy-fit kids jeans">
-            <div class="card-body text-start">
-              <h5 class="card-title">Easy-Fit Play Jeans</h5>
-              <p class="card-text">Relaxed jeans with an elastic-feel waistband. Made for recess, bikes, and weekend parks.</p>
-              <p class="mb-1"><span class="price">$20.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 4–10</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+      </div>
+
+      <!-- Jeans Row 2 -->
+      <div class="container-sm" style="margin-top: 20px; margin-bottom: 40px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/JENS (9).jpg" class="card-img-top" alt="Kids cargo jeans">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Cargo Pocket Jeans</h5>
+                  <p class="card-text">
+                    Blue jeans with extra side pockets for small treasures, crayons, or a snack bag.
+                  </p>
+                  <p class="mb-1"><span class="price">$24.50</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/JENS (8).jpg" class="card-img-top" alt="Easy-fit kids jeans">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Easy-Fit Play Jeans</h5>
+                  <p class="card-text">
+                    Relaxed jeans with an elastic-feel waistband. Made for recess, bikes, and weekend parks.
+                  </p>
+                  <p class="mb-1"><span class="price">$20.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 4–10</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  </DIV>
 
+    <!-- HOODIES COLLECTION -->
+    <div>
+      <h1 id="HOODIES" style="color: #31141A; text-align: center; margin-top: 80px;">
+        HOODIES COLLECTION
+      </h1>
 
+      <!-- Hoodies Row 1 -->
+      <div class="container-sm" style="margin-top: 20px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/HOODIE (1).jpg" class="card-img-top" alt="Classic gray kids hoodie">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Classic Gray Hoodie</h5>
+                  <p class="card-text">
+                    Soft gray hoodie with a cozy inner lining. Perfect for cool mornings and school trips.
+                  </p>
+                  <p class="mb-1"><span class="price">$26.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/HOODIE (2).jpg" class="card-img-top" alt="Black zip kids hoodie">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Black Zip Hoodie</h5>
+                  <p class="card-text">
+                    Full-zip black hoodie with sturdy pockets and a smooth zipper. Great for layering in winter.
+                  </p>
+                  <p class="mb-1"><span class="price">$28.49</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
 
-
-  <!-- HOOOOODIES -->
-
-
-  <!-- Hoodies Section -->
-<div>
-  <h1 id="HOODIES" style="color: #31141A; text-align: center; margin-top: 80px;">HOODIES COLLECTION</h1>
-
-  <!-- Hoodies Row 1 -->
-  <div class="container-sm" style="margin-top: 20px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/HOODIE (1).jpg" class="card-img-top" alt="Classic gray kids hoodie">
-            <div class="card-body text-start">
-              <h5 class="card-title">Classic Gray Hoodie</h5>
-              <p class="card-text">Soft gray hoodie with a cozy inner lining. Perfect for cool mornings and school trips.</p>
-              <p class="mb-1"><span class="price">$26.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/HOODIE (3).jpg" class="card-img-top" alt="Navy blue kids hoodie">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Navy Blue Hoodie</h5>
+                  <p class="card-text">
+                    Deep navy hoodie with a relaxed fit and soft hood. Ideal for casual wear and outdoor play.
+                  </p>
+                  <p class="mb-1"><span class="price">$27.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/HOODIE (2).jpg" class="card-img-top" alt="Black zip kids hoodie">
-            <div class="card-body text-start">
-              <h5 class="card-title">Black Zip Hoodie</h5>
-              <p class="card-text">Full-zip black hoodie with sturdy pockets and a smooth zipper. Great for layering in winter.</p>
-              <p class="mb-1"><span class="price">$28.49</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+      </div>
+
+      <!-- Hoodies Row 2 -->
+      <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/HOODIE (4).jpg" class="card-img-top" alt="Kids graphic print hoodie">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Graphic Print Hoodie</h5>
+                  <p class="card-text">
+                    Fun printed design on a comfy cotton-blend hoodie. A favorite for weekends and hangouts.
+                  </p>
+                  <p class="mb-1"><span class="price">$29.50</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/HOODIE (3).jpg" class="card-img-top" alt="Navy blue kids hoodie">
-            <div class="card-body text-start">
-              <h5 class="card-title">Navy Blue Hoodie</h5>
-              <p class="card-text">Deep navy hoodie with a relaxed fit and soft hood. Ideal for casual wear and outdoor play.</p>
-              <p class="mb-1"><span class="price">$27.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/HOODIE (5).jpg" class="card-img-top" alt="Oversized kids hoodie">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Oversized Comfort Hoodie</h5>
+                  <p class="card-text">
+                    Loose, oversized hoodie with extra warmth and a trendy look. Great for layering over T-shirts.
+                  </p>
+                  <p class="mb-1"><span class="price">$30.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 10–15</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/HOODIE (6).jpg" class="card-img-top" alt="Kids pastel pink hoodie">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Pastel Pink Hoodie</h5>
+                  <p class="card-text">
+                    Light pastel pink hoodie with a soft feel and simple style. Perfect for casual everyday wear.
+                  </p>
+                  <p class="mb-1"><span class="price">$25.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Hoodies Row 2 -->
-  <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/HOODIE (4).jpg" class="card-img-top" alt="Kids graphic print hoodie">
-            <div class="card-body text-start">
-              <h5 class="card-title">Graphic Print Hoodie</h5>
-              <p class="card-text">Fun printed design on a comfy cotton-blend hoodie. A favorite for weekends and hangouts.</p>
-              <p class="mb-1"><span class="price">$29.50</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+    <!-- TOPS COLLECTION -->
+    <div>
+      <h1 id="TOPS" style="color: #31141A; text-align: center; margin-top: 80px;">
+        TOPS COLLECTION
+      </h1>
+
+      <!-- Tops Row 1 -->
+      <div class="container-sm" style="margin-top: 20px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/TOP (1).jpg" class="card-img-top" alt="Kids white cotton T-shirt">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Classic White Tee</h5>
+                  <p class="card-text">
+                    Soft cotton white T-shirt with a comfortable round neck. Perfect for school uniforms and daily wear.
+                  </p>
+                  <p class="mb-1"><span class="price">$12.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/TOP (2).jpg" class="card-img-top" alt="Kids striped T-shirt">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Striped Casual Tee</h5>
+                  <p class="card-text">
+                    Breathable striped T-shirt in blue and white. A relaxed fit for playdates and weekend outings.
+                  </p>
+                  <p class="mb-1"><span class="price">$13.49</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/TOP (3).jpg" class="card-img-top" alt="Kids graphic print T-shirt">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Graphic Print Tee</h5>
+                  <p class="card-text">
+                    Fun cartoon print on a soft cotton tee. Bright colors that stay vivid after washing.
+                  </p>
+                  <p class="mb-1"><span class="price">$14.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/HOODIE (5).jpg" class="card-img-top" alt="Oversized kids hoodie">
-            <div class="card-body text-start">
-              <h5 class="card-title">Oversized Comfort Hoodie</h5>
-              <p class="card-text">Loose, oversized hoodie with extra warmth and a trendy look. Great for layering over T-shirts.</p>
-              <p class="mb-1"><span class="price">$30.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 10–15</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+      </div>
+
+      <!-- Tops Row 2 -->
+      <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/TOP (4).jpg" class="card-img-top" alt="Kids polo shirt">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Smart Polo Shirt</h5>
+                  <p class="card-text">
+                    Neat collar polo in navy blue with a two-button placket. Great for school events and family gatherings.
+                  </p>
+                  <p class="mb-1"><span class="price">$16.50</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 7–14</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/HOODIE (6).jpg" class="card-img-top" alt="Kids pastel pink hoodie">
-            <div class="card-body text-start">
-              <h5 class="card-title">Pastel Pink Hoodie</h5>
-              <p class="card-text">Light pastel pink hoodie with a soft feel and simple style. Perfect for casual everyday wear.</p>
-              <p class="mb-1"><span class="price">$25.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/TOP (5).jpg" class="card-img-top" alt="Kids long sleeve top">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Long-Sleeve Basic Top</h5>
+                  <p class="card-text">
+                    Simple long-sleeve top in soft fabric. Ideal for cooler days and layering under jackets.
+                  </p>
+                  <p class="mb-1"><span class="price">$15.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/TOP (6).jpg" class="card-img-top" alt="Kids pastel pink top">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Pastel Pink Top</h5>
+                  <p class="card-text">
+                    Light pastel pink top with a relaxed fit and round neck. Comfortable for all-day wear at school or home.
+                  </p>
+                  <p class="mb-1"><span class="price">$13.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–10</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
+    <!-- PARTY WEAR COLLECTION -->
+    <div>
+      <h1 id="PARTY-WEAR" style="color: #31141A; text-align: center; margin-top: 80px;">
+        PARTY WEAR COLLECTION
+      </h1>
 
+      <!-- Party Wear Row 1 -->
+      <div class="container-sm" style="margin-top: 20px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/PARTY (1).jpg" class="card-img-top" alt="Kids embroidered party dress">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Embroidered Party Dress</h5>
+                  <p class="card-text">
+                    Elegant knee-length dress with delicate embroidery and a flared skirt. Perfect for birthdays and family events.
+                  </p>
+                  <p class="mb-1"><span class="price">$34.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/PARTY (2).jpg" class="card-img-top" alt="Kids sequin top and skirt set">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Sequin Top & Skirt Set</h5>
+                  <p class="card-text">
+                    Sparkly sequin top paired with a matching skirt. A standout outfit for parties and celebrations.
+                  </p>
+                  <p class="mb-1"><span class="price">$38.49</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
 
-<!-- Tops Section -->
-<div>
-  <h1 id="TOPS" style="color: #31141A; text-align: center; margin-top: 80px;">TOPS COLLECTION</h1>
-
-  <!-- Tops Row 1 -->
-  <div class="container-sm" style="margin-top: 20px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/TOP (1).jpg" class="card-img-top" alt="Kids white cotton T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Classic White Tee</h5>
-              <p class="card-text">Soft cotton white T-shirt with a comfortable round neck. Perfect for school uniforms and daily wear.</p>
-              <p class="mb-1"><span class="price">$12.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/PARTY (3).jpg" class="card-img-top" alt="Kids formal shirt and trousers set">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Formal Shirt & Trousers</h5>
+                  <p class="card-text">
+                    Crisp formal shirt with comfortable tailored trousers. Ideal for weddings and special occasions.
+                  </p>
+                  <p class="mb-1"><span class="price">$36.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 7–14</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/TOP (2).jpg" class="card-img-top" alt="Kids striped T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Striped Casual Tee</h5>
-              <p class="card-text">Breathable striped T-shirt in blue and white. A relaxed fit for playdates and weekend outings.</p>
-              <p class="mb-1"><span class="price">$13.49</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+      </div>
+
+      <!-- Party Wear Row 2 -->
+      <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/PARTY (4).jpg" class="card-img-top" alt="Kids velvet party dress">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Velvet Party Dress</h5>
+                  <p class="card-text">
+                    Rich velvet dress with a fitted bodice and flowing skirt. A luxurious look for evening events.
+                  </p>
+                  <p class="mb-1"><span class="price">$42.50</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/TOP (3).jpg" class="card-img-top" alt="Kids graphic print T-shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Graphic Print Tee</h5>
-              <p class="card-text">Fun cartoon print on a soft cotton tee. Bright colors that stay vivid after washing.</p>
-              <p class="mb-1"><span class="price">$14.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/PARTY (5).jpg" class="card-img-top" alt="Kids designer kurta set">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Designer Kurta Set</h5>
+                  <p class="card-text">
+                    Stylish kurta with matching bottoms and subtle embellishments. Great for cultural events and Eid celebrations.
+                  </p>
+                  <p class="mb-1"><span class="price">$39.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/PARTY (6).jpg" class="card-img-top" alt="Kids tuxedo-style party suit">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Mini Tuxedo Suit</h5>
+                  <p class="card-text">
+                    Smart tuxedo-style jacket and trousers set with a bow tie. Perfect for weddings and formal photos.
+                  </p>
+                  <p class="mb-1"><span class="price">$44.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Tops Row 2 -->
-  <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/TOP (4).jpg" class="card-img-top" alt="Kids polo shirt">
-            <div class="card-body text-start">
-              <h5 class="card-title">Smart Polo Shirt</h5>
-              <p class="card-text">Neat collar polo in navy blue with a two-button placket. Great for school events and family gatherings.</p>
-              <p class="mb-1"><span class="price">$16.50</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 7–14</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+    <!-- 3-PIECE COLLECTION -->
+    <div>
+      <h1 id="THREE-PIECE" style="color: #31141A; text-align: center; margin-top: 80px;">
+        3-PIECE COLLECTION
+      </h1>
+
+      <!-- 3-Piece Row 1 -->
+      <div class="container-sm" style="margin-top: 20px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/3PC (1).jpg" class="card-img-top" alt="Kids cotton 3-piece suit">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Cotton 3-Piece Suit</h5>
+                  <p class="card-text">
+                    Comfortable kurta, pajama, and waistcoat set in soft cotton. Ideal for daily wear and casual gatherings.
+                  </p>
+                  <p class="mb-1"><span class="price">$28.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/3PC (2).jpg" class="card-img-top" alt="Kids embroidered 3-piece set">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Embroidered 3-Piece Set</h5>
+                  <p class="card-text">
+                    Elegant kurta with light embroidery, matching trousers, and a coordinated waistcoat. Perfect for Eid and weddings.
+                  </p>
+                  <p class="mb-1"><span class="price">$35.49</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/3PC (3).jpg" class="card-img-top" alt="Kids festive 3-piece outfit">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Festive 3-Piece Outfit</h5>
+                  <p class="card-text">
+                    Bright colored kurta with printed details, comfortable shalwar, and a stylish dupatta or waistcoat. Great for parties.
+                  </p>
+                  <p class="mb-1"><span class="price">$32.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/TOP (5).jpg" class="card-img-top" alt="Kids long sleeve top">
-            <div class="card-body text-start">
-              <h5 class="card-title">Long-Sleeve Basic Top</h5>
-              <p class="card-text">Simple long-sleeve top in soft fabric. Ideal for cooler days and layering under jackets.</p>
-              <p class="mb-1"><span class="price">$15.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+      </div>
+
+      <!-- 3-Piece Row 2 -->
+      <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
+        <div class="container text-center">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/3PC (4).jpg" class="card-img-top" alt="Kids luxury 3-piece ensemble">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Luxury 3-Piece Ensemble</h5>
+                  <p class="card-text">
+                    Premium fabric kurta with fine detailing, tailored bottoms, and a matching jacket. Designed for special occasions.
+                  </p>
+                  <p class="mb-1"><span class="price">$42.50</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 7–14</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/TOP (6).jpg" class="card-img-top" alt="Kids pastel pink top">
-            <div class="card-body text-start">
-              <h5 class="card-title">Pastel Pink Top</h5>
-              <p class="card-text">Light pastel pink top with a relaxed fit and round neck. Comfortable for all-day wear at school or home.</p>
-              <p class="mb-1"><span class="price">$13.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–10</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/3PC (5).jpg" class="card-img-top" alt="Kids printed 3-piece suit">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Printed 3-Piece Suit</h5>
+                  <p class="card-text">
+                    Trendy printed kurta with comfortable trousers and a solid-color waistcoat. A modern look for festive days.
+                  </p>
+                  <p class="mb-1"><span class="price">$30.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="shop/3PC (6).jpg" class="card-img-top" alt="Kids classic 3-piece traditional set">
+                <div class="card-body text-start">
+                  <h5 class="card-title">Classic Traditional 3-Piece</h5>
+                  <p class="card-text">
+                    Timeless design kurta with neat stitching, matching shalwar, and a coordinated jacket. Suitable for all celebrations.
+                  </p>
+                  <p class="mb-1"><span class="price">$33.99</span></p>
+                  <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
+                  <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-
-<!-- Party Wear Section -->
-<div>
-  <h1 id="PARTY-WEAR" style="color: #31141A; text-align: center; margin-top: 80px;">PARTY WEAR COLLECTION</h1>
-
-  <!-- Party Wear Row 1 -->
-  <div class="container-sm" style="margin-top: 20px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/PARTY (1).jpg" class="card-img-top" alt="Kids embroidered party dress">
-            <div class="card-body text-start">
-              <h5 class="card-title">Embroidered Party Dress</h5>
-              <p class="card-text">Elegant knee-length dress with delicate embroidery and a flared skirt. Perfect for birthdays and family events.</p>
-              <p class="mb-1"><span class="price">$34.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/PARTY (2).jpg" class="card-img-top" alt="Kids sequin top and skirt set">
-            <div class="card-body text-start">
-              <h5 class="card-title">Sequin Top & Skirt Set</h5>
-              <p class="card-text">Sparkly sequin top paired with a matching skirt. A standout outfit for parties and celebrations.</p>
-              <p class="mb-1"><span class="price">$38.49</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/PARTY (3).jpg" class="card-img-top" alt="Kids formal shirt and trousers set">
-            <div class="card-body text-start">
-              <h5 class="card-title">Formal Shirt & Trousers</h5>
-              <p class="card-text">Crisp formal shirt with comfortable tailored trousers. Ideal for weddings and special occasions.</p>
-              <p class="mb-1"><span class="price">$36.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 7–14</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
+    <!-- Footer -->
+    <footer class="FOOTER">
+      <div class="FOOTER-BOX">
+        <h2>YOUR BRAND</h2>
+        <p>
+          Discover timeless fashion, elegant designs,
+          and styles made to express who you are.
+        </p>
       </div>
-    </div>
-  </div>
 
-  <!-- Party Wear Row 2 -->
-  <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/PARTY (4).jpg" class="card-img-top" alt="Kids velvet party dress">
-            <div class="card-body text-start">
-              <h5 class="card-title">Velvet Party Dress</h5>
-              <p class="card-text">Rich velvet dress with a fitted bodice and flowing skirt. A luxurious look for evening events.</p>
-              <p class="mb-1"><span class="price">$42.50</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/PARTY (5).jpg" class="card-img-top" alt="Kids designer kurta set">
-            <div class="card-body text-start">
-              <h5 class="card-title">Designer Kurta Set</h5>
-              <p class="card-text">Stylish kurta with matching bottoms and subtle embellishments. Great for cultural events and Eid celebrations.</p>
-              <p class="mb-1"><span class="price">$39.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/PARTY.jpg" class="card-img-top" alt="Kids tuxedo-style party suit">
-            <div class="card-body text-start">
-              <h5 class="card-title">Mini Tuxedo Suit</h5>
-              <p class="card-text">Smart tuxedo-style jacket and trousers set with a bow tie. Perfect for weddings and formal photos.</p>
-              <p class="mb-1"><span class="price">$44.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 8–14</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
+      <div class="FOOTER-BOX">
+        <h3>QUICK LINKS</h3>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Our Story</a>
+        <a href="#">Look Book</a>
+        <a href="#">Contact</a>
       </div>
-    </div>
-  </div>
-</div>
 
-
-
-
-<!-- 3-Piece Section -->
-<div>
-  <h1 id="THREE-PIECE" style="color: #31141A; text-align: center; margin-top: 80px;">3-PIECE COLLECTION</h1>
-
-  <!-- 3-Piece Row 1 -->
-  <div class="container-sm" style="margin-top: 20px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/3PC (1).jpg" class="card-img-top" alt="Kids cotton 3-piece suit">
-            <div class="card-body text-start">
-              <h5 class="card-title">Cotton 3-Piece Suit</h5>
-              <p class="card-text">Comfortable kurta, pajama, and waistcoat set in soft cotton. Ideal for daily wear and casual gatherings.</p>
-              <p class="mb-1"><span class="price">$28.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/3PC (2).jpg" class="card-img-top" alt="Kids embroidered 3-piece set">
-            <div class="card-body text-start">
-              <h5 class="card-title">Embroidered 3-Piece Set</h5>
-              <p class="card-text">Elegant kurta with light embroidery, matching trousers, and a coordinated waistcoat. Perfect for Eid and weddings.</p>
-              <p class="mb-1"><span class="price">$35.49</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–13</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/3PC (3).jpg" class="card-img-top" alt="Kids festive 3-piece outfit">
-            <div class="card-body text-start">
-              <h5 class="card-title">Festive 3-Piece Outfit</h5>
-              <p class="card-text">Bright colored kurta with printed details, comfortable shalwar, and a stylish dupatta or waistcoat. Great for parties.</p>
-              <p class="mb-1"><span class="price">$32.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 5–11</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3-Piece Row 2 -->
-  <div class="container-sm" style="margin-top: 20px; margin-bottom: 60px;">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/3PC (4).jpg" class="card-img-top" alt="Kids luxury 3-piece ensemble">
-            <div class="card-body text-start">
-              <h5 class="card-title">Luxury 3-Piece Ensemble</h5>
-              <p class="card-text">Premium fabric kurta with fine detailing, tailored bottoms, and a matching jacket. Designed for special occasions.</p>
-              <p class="mb-1"><span class="price">$42.50</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 7–14</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/3PC (5).jpg" class="card-img-top" alt="Kids printed 3-piece suit">
-            <div class="card-body text-start">
-              <h5 class="card-title">Printed 3-Piece Suit</h5>
-              <p class="card-text">Trendy printed kurta with comfortable trousers and a solid-color waistcoat. A modern look for festive days.</p>
-              <p class="mb-1"><span class="price">$30.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="shop/3PC (6).jpg" class="card-img-top" alt="Kids classic 3-piece traditional set">
-            <div class="card-body text-start">
-              <h5 class="card-title">Classic Traditional 3-Piece</h5>
-              <p class="card-text">Timeless design kurta with neat stitching, matching
-                      <p class="mb-1"><span class="price">$30.99</span></p>
-              <p class="mb-3"><span class="age-badge">Ages 6–12</span></p>
-              <a href="#" class="btn btn" style="background-color: #31141A; color: white;">Add to Cart</a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <div class="FOOTER-BOX">
+        <h3>CONTACT US</h3>
+        <p>Email: info@yourbrand.com</p>
