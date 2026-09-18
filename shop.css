@@ -151,3 +151,10 @@ background-color: #31141A;
         width: 25px;
     }
 }
+/* Show dropdown on hover for desktop */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* optional: remove gap */
+  }
+}

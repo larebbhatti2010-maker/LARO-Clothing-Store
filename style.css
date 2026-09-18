@@ -949,3 +949,11 @@ justify-content: space-between;
     transform: scale(1.1);
 
 } */
+
+/* Show dropdown on hover for desktop */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* optional: remove gap */
+  }
+}
